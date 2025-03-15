@@ -1,0 +1,472 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styles */
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #6b1000; /* Highlight color on hover */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../images/homepage.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.cta-button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+}
+
+/* Featured Menu Section */
+.featured-menu {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA Banner */
+.cta-banner {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cta-banner .cta-button {
+    background-color: #fff;
+    color: #ff6347;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cta-banner .cta-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Search Bar */
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Category Filter */
+.category-filter {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.category-filter button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.category-filter button:hover {
+    background-color: #ff4500;
+}
+
+/* Menu Items */
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.menu-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+}
+
+.menu-item p {
+    margin: 5px 0;
+}
+
+.menu-item button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-item button:hover {
+    background-color: #ff4500;
+}
+
+/* Menu Page Styles */
+.menu-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.search-bar {
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.category-filter {
+    margin: 20px 0;
+}
+
+.category-filter button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.category-filter button:hover {
+    background-color: #ff4500;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.menu-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+}
+
+.menu-item p {
+    margin: 5px 0;
+}
+
+.menu-item button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-item button:hover {
+    background-color: #ff4500;
+}
+
+/* Cart Page Styles */
+.cart-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+.cart-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item h3 {
+    margin: 10px 0;
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+
+.cart-item button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cart-item button:hover {
+    background-color: #ff4500;
+}
+
+.checkout-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.checkout-button:hover {
+    background-color: #218838;
+}
+
+/* Checkout Page Styles */
+.checkout-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.checkout-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.checkout-form button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.checkout-form button:hover {
+    background-color: #218838;
+}
+
+/* Order Confirmation Page Styles */
+.order-confirmation-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.order-confirmation-page h1 {
+    color: #28a745;
+}
+
+.order-details {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-details p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.continue-shopping-button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.continue-shopping-button:hover {
+    background-color: #ff4500;
+}
