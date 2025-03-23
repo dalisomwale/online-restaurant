@@ -1,12 +1,20 @@
-<?php include '../includes/header.php'; ?>
+<?php
+include '../includes/header.php';
 
-<section class="order-confirmation-page">
+// Get the order ID from the URL
+$order_id = $_GET['order_id'];
+?>
+
+<section class="order-confirmation">
     <h1>Thank You for Your Order!</h1>
+    <p>Your order has been placed successfully. Here are your order details:</p>
 
     <div class="order-details">
-        <p>Your order ID is: <?php echo $order_id; ?></p>
-        <p>We'll deliver your food as soon as possible.</p>
+        <p><strong>Order ID:</strong> <?php echo htmlspecialchars($order_id); ?></p>
+        <p>We'll deliver your order shortly.</p>
     </div>
 
-    <button class="continue-shopping-button" onclick="window.location.href='menu.php'">Continue Shopping</button>
+    <a href="menu.php" class="cta-button">Back to Menu</a>
 </section>
+
+<?php include '../includes/footer.php'; ?>

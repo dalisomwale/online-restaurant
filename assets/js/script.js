@@ -87,3 +87,47 @@ function filterMenu() {
         }
     });
 }
+
+// Filter menu items by category
+function filterCategory(category) {
+    const menuItems = document.querySelectorAll('.menu-item');
+    menuItems.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+
+    // Update the heading based on the selected category
+    const heading = document.querySelector('.featured-menu h2');
+    if (category === 'all') {
+        heading.textContent = "Today's Picks";
+    } else {
+        heading.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+    }
+}
+
+function placeOrder(itemId, itemName, itemPrice) {
+    // Confirm the order with the user
+    if (confirm(`Are you sure you want to order ${itemName} for K${itemPrice}?`)) {
+        // Send the order details to the server using AJAX
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "../includes/place_order.php", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                alert("Order placed successfully!");
+                // Optionally, redirect to the order confirmation page
+                window.location.href = "order_confirmation.php";
+            } else {
+                alert("Failed to place the order. Please try again.");
+            }
+        };
+
+        // Send the item details as POST data
+        const data = `item_id=${itemId}&item_name=${itemName}&item_price=${itemPrice}`;
+        xhr.send(data);
+    }
+}

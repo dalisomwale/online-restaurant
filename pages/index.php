@@ -3,87 +3,60 @@
 <!-- Hero Section -->
 <section class="hero">
     <div class="hero-content">
-        <h1>Welcome to Our Restaurant</h1>
-        <p>Order delicious food and enjoy the fastest wifi network!</p>
-        <a href="menu.php" class="cta-button">View Menu</a>
+        <h2>Welcome to Our Restaurant</h2>
+        <p>Order delicious food and beverages at the comfort of your table with ease!</p>
+    </div>
+</section>
+
+<!-- Category Filters -->
+<section class="category-filters">
+    <h2>Explore Our Menu</h2>
+    <div class="filter-buttons">
+        <button onclick="filterCategory('all')">Today's Picks</button>
+        <button onclick="filterCategory('shawarma')">Shawarma</button>
+        <button onclick="filterCategory('burger')">Burger</button>
+        <button onclick="filterCategory('pizza')">Pizza</button>
+        <button onclick="filterCategory('ice cream')">Ice Cream</button>
+        <button onclick="filterCategory('drinks')">Drinks</button>
     </div>
 </section>
 
 <!-- Featured Menu Section -->
 <section class="featured-menu">
-    <h2>Our customer's favorite food</h2>
-    <div class="menu-items">
-        <div class="menu-item">
+    <div class="menu-items" id="menu-items">
+        <div class="menu-item" data-category="ice-cream">
+            <img src="../assets/images/ice-cream.jpeg" alt="Ice Cream">
+            <h3>Ice Cream</h3>
+            <p>K10.00</p>
+            <a href="order.php?item_id=7&item_name=Ice Cream&item_price=10.00" class="order-button">Order</a>
+        </div>
+        <div class="menu-item" data-category="burger">
             <img src="../assets/images/burger.jpeg" alt="Classic Burger">
             <h3>Classic Burger</h3>
             <p>K30.00</p>
-            <button onclick="addToCart(1, 'Classic Burger', 30.00)">Add to Cart</button>
+            <a href="order.php?item_image=burger.jpeg&item_id=6&item_name=Classic Burger&item_price=30.00" class="order-button">Order</a>
         </div>
-        <div class="menu-item">
-            <img src="../assets/images/pizza.jpeg" alt="Margherita Pizza">
+        <div class="menu-item" data-category="pizza">
+            <img src="../assets/images/pizza.jpeg" alt="Medium Pizza">
             <h3>Medium Pizza</h3>
             <p>K100.00</p>
-            <button onclick="addToCart(2, 'Margherita Pizza', 12.00)">Add to Cart</button>
+            <a href="order.php?item_id=5&item_name=Pizza&item_price=100.00" class="order-button">Order</a>
         </div>
-        <div class="menu-item">
-            <img src="../assets/images/shawarma.jpeg" alt="Caesar Salad">
+        <div class="menu-item" data-category="shawarma">
+            <img src="../assets/images/shawarma.jpeg" alt="Shawarma">
             <h3>Shawarma</h3>
             <p>K30.00</p>
-            <button onclick="addToCart(3, 'Caesar Salad', 8.00)">Add to Cart</button>
+            <a href="order.php?item_id=4&item_name=Shawarma&item_price=30.00" class="order-button">Order</a>
         </div>
-        <div class="menu-item">
-            <img src="../assets/images/ice-cream.jpeg" alt="Caesar Salad">
-            <h3>Ice cream</h3>
-            <p>K10.00</p>
-            <button onclick="addToCart(3, 'Caesar Salad', 8.00)">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <img src="../assets/images/pizza.jpeg" alt="Margherita Pizza">
-            <h3>Large Pizza</h3>
-            <p>K180.00</p>
-            <button onclick="addToCart(2, 'Margherita Pizza', 12.00)">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <img src="../assets/images/shawarma.jpeg" alt="Caesar Salad">
-            <h3>Shawarma</h3>
-            <p>K30.00</p>
-            <button onclick="addToCart(3, 'Caesar Salad', 8.00)">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <img src="../assets/images/ice-cream.jpeg" alt="Caesar Salad">
-            <h3>Ice cream</h3>
-            <p>K10.00</p>
-            <button onclick="addToCart(3, 'Caesar Salad', 8.00)">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <img src="../assets/images/burger.jpeg" alt="Classic Burger">
-            <h3>Classic Burger</h3>
-            <p>K30.00</p>
-            <button onclick="addToCart(1, 'Classic Burger', 10.00)">Add to Cart</button>
+        <div class="menu-item" data-category="drinks">
+            <img src="../assets/images/2L Coca Cola.jpeg" alt="drinks">
+            <h3>2L Coca Cola</h3>
+            <p>K25.00</p>
+            <a href="order.php?item_id=3&item_name=2L Coca Cola&item_price=25.00" class="order-button">Order</a>
         </div>
     </div>
 </section>
 
-<!-- CTA Banner -->
-<section class="cta-banner">
-    <h2>Hungry? Order Now!</h2>
-    <p>Get your favorite dishes delivered to your table.</p>
-    <a href="menu.php" class="cta-button">Order Now</a>
-</section>
-
-<!-- Testimonials Section -->
-<section class="testimonials">
-    <h2>What Our Customers Say</h2>
-    <div class="testimonial-items">
-        <div class="testimonial">
-            <p>"The best burger I've ever had! Highly recommended."</p>
-            <p><strong>- Esau Ngoma</strong></p>
-        </div>
-        <div class="testimonial">
-            <p>"Fast delivery and delicious food. Will order again!"</p>
-            <p><strong>- Harrison Sakala</strong></p>
-        </div>
-    </div>
-</section>
+<script src="../assets/js/script.js"></script>
 
 <?php include '../includes/footer.php'; ?>

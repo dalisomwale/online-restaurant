@@ -15,7 +15,6 @@
         <nav>
             <ul>
                 <li><a href="../pages/index.php">Home</a></li>
-                <li><a href="../pages/menu.php">Menu</a></li>
                 <li><a href="../pages/cart.php">Cart</a></li>
             </ul>
         </nav>
