@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Menu</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER (replaced PHP include) -->
+    <header>
+      <div class="logo">
+        <h1>Our Restaurant</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Welcome to Our Restaurant</h2>
+        <p>
+          Order delicious food and beverages at the comfort of your table with
+          ease!
+        </p>
+      </div>
+    </section>
+
+    <!-- Category Filters -->
+    <section class="category-filters">
+      <h2>Explore Our Menu</h2>
+      <div class="filter-buttons">
+        <button onclick="filterCategory('all')">Today's Picks</button>
+        <button onclick="filterCategory('shawarma')">Shawarma</button>
+        <button onclick="filterCategory('burger')">Burger</button>
+        <button onclick="filterCategory('pizza')">Pizza</button>
+        <button onclick="filterCategory('ice-cream')">Ice Cream</button>
+        <button onclick="filterCategory('drinks')">Drinks</button>
+      </div>
+    </section>
+
+    <!-- Featured Menu Section -->
+    <section class="featured-menu">
+      <div class="menu-items" id="menu-items">
+        <div class="menu-item" data-category="ice-cream">
+          <img src="../assets/images/ice-cream.jpeg" alt="Ice Cream" />
+          <h3>Ice Cream</h3>
+          <p>K10.00</p>
+          <a href="#" class="order-button">Order</a>
+        </div>
+
+        <div class="menu-item" data-category="burger">
+          <img src="../assets/images/burger.jpeg" alt="Classic Burger" />
+          <h3>Classic Burger</h3>
+          <p>K30.00</p>
+          <a href="#" class="order-button">Order</a>
+        </div>
+
+        <div class="menu-item" data-category="pizza">
+          <img src="../assets/images/pizza.jpeg" alt="Medium Pizza" />
+          <h3>Medium Pizza</h3>
+          <p>K100.00</p>
+          <a href="#" class="order-button">Order</a>
+        </div>
+
+        <div class="menu-item" data-category="shawarma">
+          <img src="../assets/images/shawarma.jpeg" alt="Shawarma" />
+          <h3>Shawarma</h3>
+          <p>K30.00</p>
+          <a href="#" class="order-button">Order</a>
+        </div>
+
+        <div class="menu-item" data-category="drinks">
+          <img src="../assets/images/2L Coca Cola.jpeg" alt="Drinks" />
+          <h3>2L Coca Cola</h3>
+          <p>K25.00</p>
+          <a href="#" class="order-button">Order</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER (replaced PHP include) -->
+    <footer>
+      <p>&copy; 2026 Our Restaurant. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
